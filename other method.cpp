@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int search(int arr[], int n, int x)
+int linearsearch(int arr[], int n, int x)
  {
   // Going through array sequencially
   for (int i = 0; i < n; i++)
@@ -28,7 +28,7 @@ int main()
   cout<<"\nEnter a Number to Search: ";
     cin>>x;
   int n = sizeof(arr) / sizeof(arr[0]);
-  int result = search(arr, n, x);
+  int result = linearsearch(arr, n, x);
 
  if (result == -1)
 {
